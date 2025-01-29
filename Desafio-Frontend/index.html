@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Task Manager</h1>
+
+    <label for="filter-completed">Filtrar:</label>
+    <select id="filter-completed">
+        <option value="">Todas</option>
+        <option value="1">Completadas</option>
+        <option value="0">No completadas</option>
+    </select>
+
+    <input type="text" id="search-task" placeholder="Buscar tarea por nombre...">
+    <button id="search-button" type="button">Buscar</button>
+
+    <form id="task-form">
+        <input type="text" id="task-name" placeholder="Nueva tarea" required>
+        <label>
+            <input type="checkbox" id="task-completed"> Completada
+        </label>
+        <button type="submit">Añadir tarea</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Completada</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="task-list"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

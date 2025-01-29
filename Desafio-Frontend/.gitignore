@@ -1,0 +1,15 @@
+# Dependencias de Node.js (si las hubieras instalado)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Configuraciones locales
+.env
+.env.local
+.env.*.local
+
+# Archivos de Live Server o VS Code
+.vscode/
+.DS_Store
+thumbs.db
